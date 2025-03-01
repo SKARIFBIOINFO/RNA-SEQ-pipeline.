@@ -33,13 +33,13 @@ Description: E. coli cultures grown with glucose as the primary carbon source.
 
 Glycerol as Carbon Source:
 
-Samples:** SRR5207019, SRR5207020, SRR5207021, SRR5207022, SRR5207023**
+Samples:**SRR5207019, SRR5207020, SRR5207021, SRR5207022, SRR5207023**
 
 Description: E. coli cultures grown with glycerol as the primary carbon source.
 
 These specific samples enable a focused comparison of gene expression profiles between E. coli grown on glucose versus glycerol, shedding light on metabolic adaptations to different carbon sources.
 **
-In this project, I have established an Anaconda environment to facilitate the RNA-Seq analysis pipeline, incorporating essential tools such as FastQC, Trimmomatic, Bowtie2, and RSEM.**
+In this project, I have established an Anaconda environment to facilitate the RNA-Seq analysis pipeline, incorporating essential tools such as FastQC, Trimmomatic, Bowtie2, and RSEM.
 
 
 ## Pipeline Workflow
