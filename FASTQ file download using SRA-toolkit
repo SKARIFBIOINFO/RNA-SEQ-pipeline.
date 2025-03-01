@@ -16,7 +16,7 @@ To download and decompress multiple FASTQ files based on the accession IDs liste
 
 
 
-__cat accession_id.txt | xargs -I {} sh -c 'fasterq-dump --split-files {}; gzip {}*.fastq'__
+cat accession_id.txt | xargs -I {} sh -c 'fasterq-dump --split-files {}; gzip {}*.fastq'
 
 
 
