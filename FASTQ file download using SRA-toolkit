@@ -19,7 +19,6 @@ To download and decompress multiple FASTQ files based on the accession IDs liste
 cat accession_id.txt | xargs -I {} sh -c 'fasterq-dump --split-files {}; gzip {}*.fastq'
 
 
-
 Explanation of the Command:
 
 cat accession_id.txt: Displays the contents of accession_id.txt, providing a list of accession IDs to process.
