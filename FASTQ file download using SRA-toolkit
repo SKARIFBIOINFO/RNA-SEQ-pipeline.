@@ -15,7 +15,9 @@ Downloading and Processing FASTQ Files:
 To download and decompress multiple FASTQ files based on the accession IDs listed in accession_id.txt, execute the following command in your terminal:
 
 
+
 **cat accession_id.txt | xargs -I {} sh -c 'fasterq-dump --split-files {}; gzip {}*.fastq'**
+
 
 
 Explanation of the Command:
