@@ -1,0 +1,29 @@
+To facilitate the retrieval and preparation of FASTQ files from the Sequence Read Archive (SRA) for our RNA-Seq analysis pipeline, we employed the SRA Toolkit, specifically utilizing the fasterq-dump utility. This tool efficiently converts SRA files into FASTQ format, which is essential for downstream analyses.
+
+Prerequisites:
+
+Install the SRA Toolkit:
+
+Ensure that the SRA Toolkit is installed on your Linux system. You can download and install it by following the instructions provided in the SRA Toolkit documentation.
+
+Prepare a List of Accession IDs:
+
+Create a text file named accession_id.txt containing the SRA accession IDs (e.g., SRRxxxxxxx) of the datasets you wish to download. Each accession ID should be on a separate line. Accesion list can be downloaded from the SRA website.
+
+Downloading and Processing FASTQ Files:
+
+To download and decompress multiple FASTQ files based on the accession IDs listed in accession_id.txt, execute the following command in your terminal:
+
+
+**cat accession_id.txt | xargs -I {} sh -c 'fasterq-dump --split-files {}; gzip {}*.fastq'**
+
+
+Explanation of the Command:
+
+cat accession_id.txt: Displays the contents of accession_id.txt, providing a list of accession IDs to process.
+
+xargs -I {} sh -c '...': Takes each accession ID from the list and substitutes it into the placeholder {} within the shell command.
+
+fasterq-dump --split-files {}: Downloads the SRA data corresponding to the accession ID {} and splits the output into separate FASTQ files for paired-end reads.
+
+gzip {}*.fastq: Compresses the resulting FASTQ files using gzip to save storage space.
