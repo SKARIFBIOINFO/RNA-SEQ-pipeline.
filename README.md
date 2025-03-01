@@ -63,27 +63,27 @@ In this project, I have established an Anaconda environment to facilitate the RN
    └── *Bowtie2*: Align cleaned reads to the *E. coli* reference genome.
 
 
-    └── Input: Cleaned reads.
+       └── Input: Cleaned reads.
 
-    └── Output: Alignment files (BAM format) indicating read positions on the genome.
+       └── Output: Alignment files (BAM format) indicating read positions on the genome.
 
 7. **Quantification**
    
    └── *RSEM*: Estimate gene and isoform expression levels from alignment data.
 
 
-    └── Input: Alignment files.
+       └── Input: Alignment files.
 
-   └── Output: Gene and isoform expression matrices.
+      └── Output: Gene and isoform expression matrices.
 
 9. **Differential Expression Analysis**
     
    └── *DESeq2*: Identify differentially expressed genes between experimental conditions.
 
 
-   └── Input: Expression matrices.
+      └── Input: Expression matrices.
 
-   └── Output: Lists of genes with significant expression changes, including statistical metrics.
+      └── Output: Lists of genes with significant expression changes, including statistical metrics.
 
 11. **Visualization and Interpretation**
     
