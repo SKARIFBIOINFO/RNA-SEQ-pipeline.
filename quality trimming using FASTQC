@@ -1,0 +1,32 @@
+To assess the quality of paired-end sequencing reads, we utilize FastQC, a widely adopted quality control tool for high-throughput sequence data. 
+FastQC evaluates various quality metrics, enabling the identification of potential issues prior to downstream analysis.
+
+Prerequisites:
+
+Install FastQC:
+
+Ensure that FastQC is installed on your system. You can download it from the official FastQC website.
+
+Prepare Your Data:
+
+Organize your paired-end FASTQ files in a directory. Typically, paired-end files are named with suffixes indicating their pair, such as sample_1.fastq (forward reads) and sample_2.fastq (reverse reads).
+
+Running FastQC on Paired-End Reads:
+
+FastQC processes each FASTQ file independently. Therefore, for paired-end data, you should run FastQC separately on both the forward and reverse read files.
+
+Navigate to the Directory Containing Your FASTQ Files:
+
+Open a terminal and change to the directory with your FASTQ files:
+
+cd /path/to/your/fastq/files   (to be executed in the command line )
+
+Run FastQC on All FASTQ Files:
+
+Execute the following command to perform quality control on all FASTQ files in the directory:
+
+
+fastqc *.fastq  (to be executed in the command line )
+
+
+This command will generate HTML and .zip report files for each FASTQ file, providing a comprehensive overview of the quality metrics.
